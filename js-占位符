@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> <head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>js美术馆</title>
+<script type="text/javascript" >
+	function showPic(whichpic)
+	{
+		var source=whichpic.getAttribute("href");
+		var placeholder= document.getElementById("placeholder");
+		placeholder.setAttribute("src",source);
+	}
+</script>
+<style>
+	.wrap{
+		width:1000px;
+		margin:0 auto;
+		}
+
+	.place{
+		margin:0 auto;
+		text-align:center;
+		}
+		.table{
+		width:1000px;
+		height:27px;
+		margin-bottom:10px;
+		}
+		.table li{
+		float:left;
+		line-height:27px;
+		list-style-type: none;
+		width: 100px;
+		font-family: "微软雅黑";
+		text-align: center;
+		}
+</style>
+<body>
+<div class="wrap">
+<h1>Snapshots</h1>
+<div class="table">
+<ul>
+	<li>
+		<a href="images/网站1.jpg" onclick="showPic(this);return false;" title="A display">第一个</a>
+	</li>
+	<li>
+		<a href="images/网站2.jpg" onclick="showPic(this);return false;" title="B display">第二个</a>
+	</li>
+	<li>
+		<a href="images/网站3.jpg" onclick="showPic(this);return false;" title="C display">第三个</a>
+	</li>
+	<li>
+		<a href="images/网易.PNG" onclick="showPic(this);return false;" title="D display">第四个</a>
+	</li>
+	<li>
+		<a href="images/MOOC中国.PNG" onclick="showPic(this);return false;" title="E display">第五个</a>
+	</li>
+</ul>
+</div>
+<div class="place">
+<img id="placeholder" src="images/ad.jpg" alt="my image" />
+</div>
+<!--place end-->
+</div>
+<!--wrap end-->
+</body>
+</html>
