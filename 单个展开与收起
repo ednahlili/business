@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>收起与展开</title>
+<style type="text/css">
+	.main {
+		margin:0 auto;
+		padding:0;
+		}
+	#pn{
+		width:400px;
+		height:auto;
+		margin:0 auto;
+		background:#E8E8E8;
+		/*background:#E8;*/NO WAY
+		display:block;
+		padding:5px;
+		font:9pt;
+	}
+	.slide{
+		border-top:4px gray solid;
+		margin:0 auto;
+		padding:0;
+		width:400px;
+	}
+	.btn_slide{
+		width:120px;
+		height:30px;
+		margin:0 auto;
+		text-align:center;
+		text-decoration:none;
+		background:gray;
+		color:#ffffff;
+		display:block;
+		padding:10px 0 0 0;
+	}
+</style> 
+</head>
+<body>
+	<!--第一个例子-->
+	<div class="">
+<!--两层容器部分开始-->
+	<div id="pn">
+		<p>手机-商品选择—质量-性价</p>	
+		<p>网络：移动 联通 电信</p>
+		<!--隐藏部分开始-->
+		<div id="pn_stop" style="display:none">
+			<p>价格：5000以上 3000-4000 1000-2000</p>
+			<p>特点：防水 超长待机 高像素</p>
+		</div>
+		<!--隐藏部分结束-->
+	</div>
+<!--两层容器部分结束-->
+	<!--按钮部分开始-->
+	<p class="slide">
+		<a href="javascript:showDiv()" id="btn" class="btn_slide" >更多选项</a>
+		<!--定义ID是为了获取innerHtml-->
+	</p>
+	</div>
+	<!--第一个例子结束-->
+</body>
+<script type="text/javascript">
+	function showDiv(){
+		document.getElementById("pn_stop").style.display="block";
+		document.getElementById("btn").innerHTML="收起";
+		document.getElementById("btn").href="javascript:hideDiv()";
+	}
+	function hideDiv(){
+		document.getElementById("pn_stop").style.display="none";
+		document.getElementById("btn").innerHTML="更多选项";
+		document.getElementById("btn").href="javascript:showDiv()";
+	}
+</script>
+</html>
