@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>多个展开</title>
+<style type="text/css">
+ body{
+		margin: 0 auto;
+		padding: 0;
+		font-size: 9pt;
+        }
+ #pn {
+		background: #f8f8f8;
+		height: auto;
+		width: 800px;
+		display: block;
+		margin: 0 auto;
+		padding: 5px;
+        }
+.content
+{
+	border: 1px solid #CCC;
+	display: none;
+	padding: 5px;
+}
+.Title{
+		font-weight: bold;
+		color: #3030FF;
+		font-size:11pt;
+}
+.sub {
+	   color: #CCC;
+}
+.btn{
+		width: 80px;
+		height: 20px;
+		padding: 5px 3px 5px 3px;
+		text-align: center;
+		text-decoration: none;
+		background: #f0f0f0;
+		border: 1px solid #CCC;
+        }
+.btm{
+	  text-align: right;
+      height: 30px;
+}
+
+</style>
+</head>
+<body>
+<div id="pn">
+        <div id="art0">
+            <p class="art Title">Slack：团队日常沟通协作工具典范</p>
+            <p class="sub Title">作者：来自网络 发表时间：2014-3-1</p>
+            <p>现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：
+                在所有端都可以进行，即桌面端，包括Mac OS和Windows系统；web端即浏览器；移动端的支持包括iOS和Android。 同时，移动端是有良好体验以满足移动办公便利性的。
+                聚焦核心行为，即"发布一条信息"，团队成员只需要做一个这个基本行为即可。 发布一条... <a href="#" onclick="showdiv(this);">展开全文</a></p>   
+<!--点击全文实现展开-->
+            <div class="content">
+                <p>
+        现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：
+				</p>
+                
+                <p>聚焦核心行为，即“发布一条信息”，团队成员只需要做一个这个基本行为即可。</p>
+                <p>
+   发布一条信息这个行为可以扩展成为该信息是一个图片或者一个文件等，以便协作更好进行，如果文件能快速预览则更好。
+   				</p>
+                <p>
+                    支持@方式直接和单个团队成员沟通，并且能够被其他成员看到和参与进来。</p>
+                <p>
+                    以#来进行快速形成话题组或者项目组。
+				</p>
+                <div class="btm">
+                    <a href="#" class="btn" onclick="hidediv(this);">收起全文</a>  
+<!-- 点击收起全文实现收起-->
+                </div>
+            </div>
+        </div>
+<!--=================================================================================================-->
+		 <hr />
+        <div id="art1">
+            <p class="art Title">
+                Slack：团队日常沟通协作工具典范
+            </p>
+            <p class="sub Title">
+                作者：来自网络 发表时间：2014-3-1
+            </p>
+            <p>
+                现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：
+                在所有端都可以进行，即桌面端，包括Mac OS和Windows系统；web端即浏览器；移动端的支持包括iOS和Android。 同时，移动端是有良好体验以满足移动办公便利性的。
+                聚焦核心行为，即"发布一条信息"，团队成员只需要做一个这个基本行为即可。 发布一条... <a href="#" onclick="showdiv(this);" >展开全文</a></p>     
+ <!--点击全文实现展开-->
+            <div class="content">
+                <p>
+                    现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：</p>
+                <p>
+                    在所有端都可以进行，即桌面端，包括Mac OS和Windows系统；web端即浏览器；移动端的支持包括iOS和Android。</p>
+                <p>
+                    同时，移动端是有良好体验以满足移动办公便利性的。</p>
+                <div class="btm">
+                    <a  onclick="hidediv(this);" href="#" class="btn">收起全文</a>     
+<!--点击收起全文实现收起-->
+                </div>
+<!--btm结束-->
+            </div>
+<!--content结束-->
+        </div>
+<!--art1结束-->
+ <!--====================================================================================================-->
+  <hr />
+        <div id="art2">
+            <p class="art Title">
+                Slack：团队日常沟通协作工具典范
+            </p>
+            <p class="sub Title">
+                作者：来自网络 发表时间：2014-3-1
+            </p>
+            <p>
+                现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：
+                在所有端都可以进行，即桌面端，包括Mac OS和Windows系统；web端即浏览器；移动端的支持包括iOS和Android。 同时，移动端是有良好体验以满足移动办公便利性的。
+                聚焦核心行为，即"发布一条信息"，团队成员只需要做一个这个基本行为即可。 发布一条... <a href="#" onclick="showdiv(this);">展开全文</a></p>     
+ <!--点击全文实现展开-->
+            <div class="content">
+                <p>
+                    现在可以在Slack.com上申请成为试用用户，这是一个面对企业、团队的协作工具，似乎需要试用企业域名后缀的邮箱。 Slack从目前看，基本符合我对团队沟通工具的完全要求。特点如下：</p>
+                <p>
+                    在所有端都可以进行，即桌面端，包括Mac OS和Windows系统；web端即浏览器；移动端的支持包括iOS和Android。</p>
+                <p>
+                    同时，移动端是有良好体验以满足移动办公便利性的。</p>
+                <div class="btm">
+                    <a href="#" class="btn" onclick="hidediv(this);">收起全文</a>     
+<!--点击收起全文实现收起-->
+                </div>
+<!--btm结束-->
+            </div>
+<!--content结束-->
+        </div>
+<!--art2结束-->
+	</div>
+ <!--第三个例子结束-->
+</body>
+<script type="text/javascript">
+	 function showdiv(obj) {
+	 	var x=obj.parentNode; //摘要p
+           var y=x.nextSibling;  //正文p
+// 元素节点的nodeType值为1
+           while(y.nodeType!=1){
+               y=y.nextSibling;
+           }
+            x.style.display="none";
+            y.style.display="block";  
+        }
+
+       // 隐藏函数
+        function hidediv(obj) {
+            
+          var x=obj.parentNode.parentNode; //正文
+           var y=x.previousSibling;   //摘要
+           while(y.nodeType!=1){
+               y=y.previousSibling;
+           }
+            x.style.display="none";
+            y.style.display="block";          
+        }
+		//正文和摘要不同时存在
+</script>
+</html>
